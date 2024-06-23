@@ -1,0 +1,43 @@
+body { /*the background and text set up */
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { /*configuration for the 'best video game' title */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game { /*adding the white boxes to separate each game */
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.game img { /*general format for the images */
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.game p { /*text formating */
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) { /*formatting the dividers on page and scroll */
+    .game {
+        flex-direction: column;
+        text-align: center;
+    }
+    .game img {
+        margin: 0 auto 20px;
+    }
+}
